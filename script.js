@@ -14,9 +14,10 @@
         }
     });
 
+    var defaultOption = 'index.html';
     // Loop over each option in the dropdown
     for (var i = 0; i < dropdownOptions.length; i++) {
-        if (dropdownOptions[i].value === page) {
+        if (dropdownOptions[i].value === page || (page === '' && dropdownOptions[i].value === defaultOption)) {
             dropdownOptions[i].selected = true;
             break;
         }
