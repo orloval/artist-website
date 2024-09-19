@@ -27,7 +27,7 @@ main.content {
     background-size: contain;
     background-position: center;
 }
-
+a {color:#f16969;}
 .navigation a {
     text-decoration: none;
     color: #000;
@@ -88,6 +88,14 @@ figcaption {
 
 
 
+/* Styling for the Cavalry poster image */
+.content .poster {
+    width: 50%;
+    max-width: 800px; /* Restrict maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
 
 
 
@@ -96,6 +104,42 @@ figcaption {
     display: none;
 }
 
+/* Press Section Styling */
+.press-section {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.press-kit-reviews-list {
+    list-style: none;
+    padding: 0;
+
+}
+
+.press-kit-reviews-list li {
+    margin-bottom: 30px;
+}
+
+.content .press-image {
+    width: 25%; /* Adjust image size as needed */
+    height: auto;
+    margin-right: 15px;
+    float: left;
+}
+
+.project-review__publication {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.project-review__link a {
+    color: #f76b66; /* Link color */
+    text-decoration: none;
+}
+
+.project-review__link a:hover {
+    text-decoration: underline;
+}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -135,4 +179,12 @@ figcaption {
     main.content img {
         width: 100%; /* Adjust the image width to fit the container */
     }
+    /* Styling for the Cavalry poster image */
+.content .poster {
+    width: 100%;
+    max-width: 800px; /* Restrict maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
 }
