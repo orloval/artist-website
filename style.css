@@ -7,6 +7,17 @@ body {
     min-height: 100vh;
 }
 
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the images wrap to the next line if the container is too narrow */
+    gap: 20px; /* Space between the images */
+    margin: 20px 0; /* Add some margin above and below the image block */
+}
+
+.image-gallery img {
+    width: 80% !important; /* Adjust this based on how many images you want in a row */
+    height: auto; /* Maintain aspect ratio */
+}
 aside.navigation {
     font-size: 16px;
     color: #000;
@@ -20,7 +31,7 @@ aside.navigation {
 }
 
 main.content {
-    margin-left: 20%; /* Should be the same as the width of the navigation sidebar */
+    margin-left: 22%; /* Should be the same as the width of the navigation sidebar */
     flex-grow: 1;
     padding: 5%;
     background: #ffffff; /* Default background for content area */
@@ -35,7 +46,7 @@ a {color:#f16969;}
     display: block;
     margin: 15px 0;
     padding-left: 10%; /* Add padding for better clickability and appearance */
-    margin-right: 10%;
+    margin-right: 30%;
 }
 
 .navigation a.active {
@@ -95,6 +106,7 @@ figcaption {
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto; /* Center the image */
+    margin-left: 20%;
 }
 
 
@@ -117,7 +129,7 @@ figcaption {
 }
 
 .press-kit-reviews-list li {
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 
 .content .press-image {
