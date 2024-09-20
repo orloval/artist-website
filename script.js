@@ -1,32 +1,45 @@
-    // Get the current URL path without the domain
-    var path = window.location.pathname;
-    // Get the filename only
-    var page = path.split("/").pop();
+document.addEventListener('DOMContentLoaded', function() {
+    // Load the nav.html file into the aside
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector('aside.navigation').innerHTML = data;
+            highlightActiveLink();
+            setDropdownSelection();
+            setupHeaderClick();
+        });
 
-    // Select all navigation links and dropdown options
-    var navLinks = document.querySelectorAll('.navigation a');
-    var dropdownOptions = document.querySelector('.dropdown-nav').options;
+    function highlightActiveLink() {
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
 
-    // Loop over each link in the navigation
-    navLinks.forEach(function(link) {
-        if(link.getAttribute('href') === page) {
-            link.classList.add('active');
-        }
-    });
+        var navLinks = document.querySelectorAll('.navigation a');
+        navLinks.forEach(function(link) {
+            if (link.getAttribute('href') === page) {
+                link.classList.add('active');
+            }
+        });
+    }
 
-    var defaultOption = 'index.html';
-    // Loop over each option in the dropdown
-    for (var i = 0; i < dropdownOptions.length; i++) {
-        if (dropdownOptions[i].value === page || (page === '' && dropdownOptions[i].value === defaultOption)) {
-            dropdownOptions[i].selected = true;
-            break;
+    function setDropdownSelection() {
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        var dropdownOptions = document.querySelector('.dropdown-nav').options;
+        var defaultOption = 'index.html';
+
+        for (var i = 0; i < dropdownOptions.length; i++) {
+            if (dropdownOptions[i].value === page || (page === '' && dropdownOptions[i].value === defaultOption)) {
+                dropdownOptions[i].selected = true;
+                break;
+            }
         }
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
+    function setupHeaderClick() {
         var header = document.querySelector('.header');
         header.style.cursor = 'pointer';
         header.addEventListener('click', function() {
             window.location.href = 'index.html';
         });
-    });
+    }
+});
