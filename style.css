@@ -102,7 +102,7 @@ figcaption {
 
 /* Styling for the Cavalry poster image */
 .content .poster {
-    width: 50%;
+    width: 90%;
     max-width: 800px; /* Restrict maximum width */
     height: auto; /* Maintain aspect ratio */
     display: block;
