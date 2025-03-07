@@ -107,7 +107,7 @@ figcaption {
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto; /* Center the image */
-    margin-left: 20%;
+    margin-left: 0%;
 }
 
 
