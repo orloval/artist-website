@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
+  <url>
+    <loc>https://alinaorlov.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <!-- Films & Projects -->
+  <url><loc>https://alinaorlov.com/the_cavalry.html</loc></url>
+  <url><loc>https://alinaorlov.com/the_cavalry_prints.html</loc></url>
+  <url><loc>https://alinaorlov.com/the_broom_window.html</loc></url>
+  <url><loc>https://alinaorlov.com/frank_barcelona.html</loc></url>
+  <url><loc>https://alinaorlov.com/forest_of_ornaments.html</loc></url>
+  <url><loc>https://alinaorlov.com/ballroom.html</loc></url>
+  <url><loc>https://alinaorlov.com/ponchik.html</loc></url>
+  <url><loc>https://alinaorlov.com/sprinkler.html</loc></url>
+  <url><loc>https://alinaorlov.com/jaccuse.html</loc></url>
+  <url><loc>https://alinaorlov.com/yahel.html</loc></url>
+  <url><loc>https://alinaorlov.com/tsytsa_maritza.html</loc></url>
+  <!-- About / CV -->
+  <url><loc>https://alinaorlov.com/about.html</loc></url>
+</urlset>
